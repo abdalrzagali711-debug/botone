@@ -5,7 +5,7 @@ from flask import Flask
 from threading import Thread
 
 # 1. إعداد سيرفر Flask (لإبقاء البوت حياً على Render)
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -51,3 +51,4 @@ if __name__ == "__main__":
     print("Starting bot...")
     keep_alive()  # تشغيل السيرفر في الخلفية
     bot.infinity_polling() # تشغيل استقبال رسائل تلجرام
+
