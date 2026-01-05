@@ -33,7 +33,7 @@ def start(message):
     btn2 = types.KeyboardButton('اتصل بنا')
     markup.add(btn1, btn2)
     
-    welcome_msg = "مرحباً بك في بوت botone! 🤖\nكيف يمكنني مساعدتك اليوم؟"
+    welcome_msg = "مرحباً بك في بوت ABDALRZAG! 🤖\nكيف يمكنني مساعدتك اليوم؟"
     bot.send_message(message.chat.id, welcome_msg, reply_markup=markup)
 
 # التعامل مع الضغط على الأزرار
@@ -42,7 +42,7 @@ def handle_messages(message):
     if message.text == "خدماتنا":
         bot.send_message(message.chat.id, "✅ نحن نقدم خدمات برمجية وإنشاء بوتات ذكية.")
     elif message.text == "اتصل بنا":
-        bot.send_message(message.chat.id, "📧 يمكنك التواصل مع المطور عبر: @your_username")
+        bot.send_message(message.chat.id, "📧 يمكنك التواصل مع المطور عبر: 00967772786907 ")
     else:
         bot.reply_to(message, "لم أفهم هذا الأمر، جرب استخدام الأزرار.")
 
@@ -51,4 +51,5 @@ if __name__ == "__main__":
     print("Starting bot...")
     keep_alive()  # تشغيل السيرفر في الخلفية
     bot.infinity_polling() # تشغيل استقبال رسائل تلجرام
+
 
